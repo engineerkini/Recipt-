@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receipt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="receipt">
+        <h2>Company Receipt</h2>
+        <p><strong>Customer:</strong> {{ customer_name }}</p>
+        <p><strong>Parcel:</strong> {{ parcel_desc }}</p>
+        <p><strong>Amount:</strong> KES {{ amount }}</p>
+        <p>Thank you for using our service!</p>
+    </div>
+</body>
+</html>
